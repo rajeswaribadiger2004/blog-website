@@ -1,0 +1,180 @@
+body {
+    margin-top: 70px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+header ul{
+    font-size: 1.5vw;
+    text-align: right;
+    list-style: none;
+    padding-left: 15px;
+}
+
+header ul li{
+    padding-left: 10px;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    margin-right: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.image{
+    width: 100%;
+    max-width: 100%;
+}
+.read-more,
+.read-less{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.read-more:hover
+.read-less:hover{
+    cursor: pointer;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: 300px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+ul.myblog{
+    text-align: center;
+}
+ul.myblog li{
+
+    display: inline;
+    padding: 20px;
+    cursor: pointer;
+}
+.article-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.about-me {
+    text-align: center;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.image-container{
+    flex: 1;
+}
+
+.image-container img{
+    padding: 30px;
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+.content-container{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-me {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    header ul {
+        font-size: 1.2rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .about-me {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
